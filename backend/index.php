@@ -29,7 +29,7 @@ class Application
           // than we us the $upload_tmp_dir
           $upload_tmp_dir=ini_get('upload_tmp_dir');
 	  if( !empty($upload_tmp_dir) && is_writable($upload_tmp_dir) ) $tmp[cache][cacheDir]=$upload_tmp_dir;
-	  else die('No usualble tmp dir found.');
+	  else die('No usable tmp dir found.');
 	}
 
         $shariff = new Backend($tmp);
